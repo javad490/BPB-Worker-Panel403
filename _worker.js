@@ -3262,7 +3262,7 @@ const xrayConfigTemp = {
     observatory: {
         probeInterval: "30s",
         probeURL: "https://api.github.com/_private/browser/stats",
-        subjectSelector: ["prox"],
+        subjectSelector: ["proxy"],
         EnableConcurrency: true,
     },
     stats: {},
@@ -3274,7 +3274,7 @@ const xrayOutboundTemp =
         concurrency: 8,
         enabled: true,
         xudpConcurrency: 8,
-        xudpProxyUDP443: "reject"
+        xudpProxyUDP443: "proxy"
     },
     protocol: "vless",
     settings: {
@@ -3468,7 +3468,7 @@ const singboxConfigTemp = {
                 network: "udp",
                 port: 443,
                 protocol: "quic",
-                outbound: "block"
+                outbound: "proxy"
             },
             {
                 ip_is_private: true,
